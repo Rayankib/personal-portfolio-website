@@ -21,7 +21,8 @@ nav {
   top: 0;
   left: 0;
   backdrop-filter: blur(10px);
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 10;
 }
 
 .logo {
@@ -38,11 +39,12 @@ ul {
 li {
   cursor: pointer;
   color: #d1d1d1;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 li:hover {
   color: white;
+  transform: translateY(-2px);
 }
 
 .hero {
@@ -58,6 +60,7 @@ li:hover {
   margin-bottom: 25px;
   letter-spacing: 2px;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -82,7 +85,7 @@ button {
   background: transparent;
   color: white;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -90,6 +93,7 @@ button {
 button:hover {
   background: white;
   color: black;
+  transform: translateY(-3px);
 }
 
 .info-section {

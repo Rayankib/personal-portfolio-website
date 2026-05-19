@@ -8,6 +8,7 @@ body {
   background: #0f0f0f;
   color: white;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -15,29 +16,33 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 80px;
+  padding: 120px;
 }
 
 h1 {
-  font-size: 72px;
-  margin-bottom: 20px;
+  font-size: 90px;
+  margin-bottom: 30px;
+  line-height: 1;
 }
 
 p {
-  max-width: 600px;
-  line-height: 1.6;
+  max-width: 650px;
+  line-height: 1.8;
   color: #cfcfcf;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  font-size: 18px;
 }
 
 button {
   width: fit-content;
-  padding: 14px 28px;
+  padding: 18px 40px;
   border: 1px solid white;
   background: transparent;
   color: white;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 button:hover {

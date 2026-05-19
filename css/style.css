@@ -96,12 +96,14 @@ button:hover {
   transform: translateY(-3px);
 }
 
-.info-section {
+.info-section,
+.projects-section {
   padding: 120px 80px;
   border-top: 1px solid #222;
 }
 
-.info-section h2 {
+.info-section h2,
+.projects-section h2 {
   font-size: 42px;
   margin-bottom: 20px;
 }
@@ -110,4 +112,35 @@ button:hover {
   max-width: 700px;
   color: #bdbdbd;
   line-height: 1.8;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.project-card {
+  border: 1px solid #222;
+  padding: 35px;
+  min-height: 220px;
+  background: #111;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #555;
+  background: #151515;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.project-card p {
+  color: #bdbdbd;
+  line-height: 1.7;
 }

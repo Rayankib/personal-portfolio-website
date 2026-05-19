@@ -5,10 +5,36 @@
 }
 
 body {
-  background: #0b0b0b;
+  background: radial-gradient(circle at top left, #1f1b3a, #0b0b0b 45%);
   color: white;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 420px;
+  height: 420px;
+  background: rgba(98, 80, 255, 0.25);
+  border-radius: 50%;
+  top: 120px;
+  right: -120px;
+  filter: blur(90px);
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 350px;
+  height: 350px;
+  background: rgba(0, 209, 255, 0.18);
+  border-radius: 50%;
+  bottom: -100px;
+  left: -100px;
+  filter: blur(90px);
+  z-index: -1;
 }
 
 nav {
@@ -28,6 +54,7 @@ nav {
 .logo {
   font-size: 20px;
   font-weight: bold;
+  color: #ffffff;
 }
 
 ul {
@@ -56,7 +83,7 @@ li:hover {
 }
 
 .small-text {
-  color: #888;
+  color: #9f9bff;
   margin-bottom: 25px;
   letter-spacing: 2px;
   font-size: 14px;
@@ -64,10 +91,16 @@ li:hover {
 }
 
 h1 {
-  font-size: 92px;
-  max-width: 950px;
+  font-size: 88px;
+  max-width: 1050px;
   line-height: 1;
   margin-bottom: 30px;
+}
+
+h1 span {
+  background: linear-gradient(90deg, #ffffff, #9f9bff, #00d1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-description {
@@ -81,8 +114,8 @@ h1 {
 button {
   width: fit-content;
   padding: 18px 40px;
-  border: 1px solid white;
-  background: transparent;
+  border: 1px solid #9f9bff;
+  background: rgba(159, 155, 255, 0.08);
   color: white;
   cursor: pointer;
   transition: 0.3s ease;
@@ -91,9 +124,10 @@ button {
 }
 
 button:hover {
-  background: white;
+  background: #9f9bff;
   color: black;
   transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(159, 155, 255, 0.35);
 }
 
 .info-section,
@@ -122,17 +156,18 @@ button:hover {
 }
 
 .project-card {
-  border: 1px solid #222;
+  border: 1px solid #262645;
   padding: 35px;
   min-height: 220px;
-  background: #111;
+  background: rgba(17, 17, 25, 0.85);
   transition: 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  border-color: #555;
-  background: #151515;
+  border-color: #9f9bff;
+  background: rgba(25, 25, 45, 0.95);
+  box-shadow: 0 0 35px rgba(159, 155, 255, 0.12);
 }
 
 .project-card h3 {

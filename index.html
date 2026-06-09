@@ -8,60 +8,104 @@
 </head>
 <body>
 
-  <nav>
-    <div class="logo">Rayan Fikri</div>
+  <nav class="navbar">
+    <a href="#" class="logo">Rayan Fikri</a>
 
-    <ul>
-      <li>Projects</li>
-      <li>About</li>
-      <li>Contact</li>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <header class="hero">
-    <p class="small-text">ICT Student • Frontend • Media Creation</p>
+    <p class="eyebrow">ICT Student • Frontend • Media Creation</p>
 
     <h1>
-      Hi, I am <span>Rayan Fikri</span>. I create visuals and digital experiences with purpose.
+      I create visual stories and digital experiences.
     </h1>
 
-    <p class="hero-description">
-      A personal portfolio focused on frontend development,
-      media creation and visual storytelling.
+    <p class="hero-text">
+      My portfolio shows my growth in frontend development, media creation,
+      design research and creative storytelling.
     </p>
 
-    <button>Explore Projects</button>
+    <div class="hero-buttons">
+      <a href="#work" class="btn primary">View my work</a>
+      <a href="#about" class="btn secondary">About me</a>
+    </div>
   </header>
 
-  <section class="info-section">
-    <h2>About this portfolio</h2>
-
+  <section class="section intro" id="about">
+    <p class="eyebrow">About</p>
+    <h2>Who I am</h2>
     <p>
-      This website is currently in development and will be used
-      to showcase my frontend projects, media work and creative process.
+      I am Rayan Fikri, an ICT student focused on frontend development and media creation.
+      I like creating visual products that combine design, storytelling and user experience.
     </p>
   </section>
 
-  <section class="projects-section">
-    <p class="small-text">Selected work</p>
-    <h2>Projects I want to showcase</h2>
+  <section class="section" id="work">
+    <p class="eyebrow">Selected work</p>
+    <h2>Projects</h2>
 
     <div class="project-grid">
       <article class="project-card">
-        <h3>Media Creation</h3>
-        <p>Video projects, storytelling and visual concepts from this semester.</p>
+        <span>01</span>
+        <h3>OV09 Trailer</h3>
+        <p>
+          A media creation project focused on storytelling, filming, editing and post-production.
+        </p>
       </article>
 
       <article class="project-card">
-        <h3>Frontend Development</h3>
-        <p>Web projects, coding progress and interactive portfolio experiments.</p>
+        <span>02</span>
+        <h3>Toku Studios</h3>
+        <p>
+          A branding project where I worked on visual identity, research and creative direction.
+        </p>
       </article>
 
       <article class="project-card">
-        <h3>Design Process</h3>
-        <p>Research, iterations and creative choices behind my final work.</p>
+        <span>03</span>
+        <h3>Personal Portfolio</h3>
+        <p>
+          My personal website where I show my projects, design choices and development process.
+        </p>
       </article>
     </div>
+  </section>
+
+  <section class="section process" id="process">
+    <p class="eyebrow">Process</p>
+    <h2>How I work</h2>
+
+    <div class="steps">
+      <div>
+        <h3>Research</h3>
+        <p>I start by understanding the target audience, trends and project goals.</p>
+      </div>
+
+      <div>
+        <h3>Create</h3>
+        <p>I turn research into concepts, prototypes, visuals or functional products.</p>
+      </div>
+
+      <div>
+        <h3>Improve</h3>
+        <p>I collect feedback, analyse it and improve my work through iterations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2>Let’s connect</h2>
+    <p>
+      I am open to feedback, collaboration and internship opportunities.
+    </p>
+    <a href="mailto:yourmail@example.com" class="btn primary">Send email</a>
   </section>
 
   <script src="js/main.js"></script>

@@ -1,27 +1,21 @@
 # Personal Portfolio Website
 
-This project is the start of my personal portfolio website.
+My personal portfolio website, shared with my CV when applying for ICT internships. It presents my work across frontend development, interactive web experiences, visual design and media.
 
-The goal of this website is to professionally showcase my frontend work, media projects and creative development.
-
-## Current Status
-
-Research and setup phase.
-
-## Planned Features
-
-- Responsive design
-- Portfolio projects
-- About page
-- Animations
-- Interactive frontend elements
-- Contact section
-
-## Tools
+## Technologies
 
 - HTML
 - CSS
 - JavaScript
-- VS Code
-- GitHub
-- GitHub Pages
+
+## Local usage
+
+Open `index.html` in a web browser. The site is static and requires no build step.
+
+## Live website
+
+https://rayankib.github.io/personal-portfolio-website/
+
+## Iterative development
+
+The website is continuously improved through research, feedback, testing and reflection on previous iterations.

@@ -34,3 +34,29 @@ I decided to improve the information hierarchy of the hero so visitors can immed
 ### Validation
 
 This iteration is based on research, but the result still needs to be validated through feedback and/or user testing.
+
+## 4 October 2026 - First visual product preview
+
+### Observation
+
+The previous Selected Work section mainly showed text descriptions instead of visual examples of finished products. It also included a Personal Portfolio project, even though this website is already my showcase portfolio.
+
+### Research and reasoning
+
+Previous portfolio feedback recommended making finished projects more visible and using visual previews to help visitors recognize and understand the work. Since I use this website when applying for ICT/frontend internships, showing a real, working frontend product gives visitors more concrete evidence than a description alone. Removing the Personal Portfolio entry also makes room for more relevant and varied work.
+
+### Decision
+
+I decided to introduce FitPlanner as the first visual product preview and remove the redundant Personal Portfolio project from Selected Work.
+
+### Implementation
+
+- Added a genuine 1280 × 800 screenshot captured from the live FitPlanner application.
+- Added a reusable visual project-card style with a screenshot, concise product description, technology labels, and a live-project link.
+- Added a “Try Live Project” link to the working FitPlanner site. The HTML, CSS, and JavaScript labels reflect the project documentation.
+- Kept OV09 and Toku Studios in Selected Work for future presentation improvements.
+- Removed the Personal Portfolio entry and its detail page after confirming that the homepage entry was its only internal link.
+
+### Validation
+
+I confirmed that the live FitPlanner homepage loads, selecting a sport opens the training planner, and the planner displays sessions. I reviewed the portfolio card on desktop and at a 390-pixel mobile width, confirmed the image loads without horizontal overflow, and checked that keyboard navigation reaches the live-project link. Toku's back link returned to Selected Work; the OV09 page and its back-link target were verified, although the browser automation could not complete a click on that link. My own review and user feedback are still pending. I have not tested whether the new presentation improves recruiter engagement.

@@ -168,3 +168,29 @@ I copied the approved active-gameplay screenshot into the portfolio's local asse
 ### Future
 
 I kept the existing Selected Work card architecture and added Skraw.io as its strongest frontend case. After I finish the remaining project content, I plan to reorganize the full Selected Work section into Frontend Development, UX/UI & Client Work, and Media Creation.
+
+## 7 October 2026 - Digital Paradise website and motion case
+
+### Observation
+
+My showcase already contained OV09 as a cinematic video case, but it did not show the combination of client media, filming, motion and frontend work I completed for Digital Paradise.
+
+### Decision
+
+I presented Digital Paradise around my two concrete finished outputs: the live landing page and the client video.
+
+### Website
+
+I verified my personal ownership through the repository and Git history before presenting the landing page as my frontend work. I designed and built it with HTML, CSS and JavaScript and presented its live GitHub Pages deployment.
+
+### Video
+
+I presented the production workflow: I filmed most of the original footage across two live events and a studio session, combined footage from those shoots with additional material, and completed the edit and motion work in After Effects.
+
+### Accuracy and presentation
+
+I separated my website and video ownership from the wider team-created branding, research and campaign context. I used the live website as the clean first impression, the video thumbnail as the finished media link, and my After Effects screenshot as process evidence. The collaborative logo exploration is labeled as team process rather than an individually authored final identity.
+
+### Future
+
+After I complete all five project cases, I plan to reorganize Selected Work into Frontend Development, UX/UI & Client Work, and Media Creation.

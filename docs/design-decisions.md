@@ -132,3 +132,39 @@ I checked the homepage project order and OV09 card destination, opened the OV09 
 I checked the homepage and OV09 page at 1440 × 900, 1366 × 768, 768 × 1024 and 390 × 844. Neither page had horizontal overflow, and the trailer retained its 16:9 ratio at each viewport. The poster and all three stills loaded. I verified native video controls, metadata and manual playback in the browser; the video played at 1920 × 1080 with a duration of 136.94 seconds. Keyboard focus was visible on the project navigation link, the video was keyboard-focusable, and reduced-motion settings disabled smooth scrolling and shortened transitions.
 
 The browser recorded no console or page errors. It did report `ERR_ABORTED` for a video request when I navigated away during preload; the video metadata loaded and playback succeeded, so this was a cancelled preload rather than a missing asset. I also checked the local project links and asset paths. External portfolio feedback remains pending.
+
+## 7 October 2026 - Skraw.io frontend development case
+
+### Observation
+
+My showcase lacked a substantial frontend case. FitPlanner demonstrates basic frontend implementation, while Skraw.io contains a broader interactive interface and team-development context.
+
+### Decision
+
+I added Skraw.io as my primary Frontend Development case while keeping FitPlanner as complementary evidence. I presented it as a team project and separated my documented frontend and UX/UI work from later shared implementation.
+
+### Visual refinement (Iteration 5.1)
+
+The multiplayer runtime screenshot was technically useful evidence, but visually too busy to be Skraw.io's primary first impression. I changed the main image to the cleaner Skraw landing screen and moved the multiplayer screenshot into the runtime-validation section. The landing screen communicates the product more clearly at first glance; the gameplay screenshot is more valuable later as evidence that I restored and tested the actual multiplayer application. This separates product presentation from technical validation.
+
+### Evidence and contribution
+
+The available Git history confirms my early component structure, initial `App.vue` layout, canvas baseline, drawing controls, game header, player list and frontend styling. Portflow supports my timer research and design, early implementation/prototype work, and UX validation through feedback and questionnaire work.
+
+I describe my contribution in first person: I created the initial component-based game interface and early `App.vue` layout; established an early `CanvasBoard.vue` drawing baseline and drawing controls; worked on the initial `GameHeader.vue`, `PlayerList.vue` and general frontend styling; researched and designed the timer experience; contributed to an early timer implementation/prototype; and used user feedback and questionnaire work to validate interface and timer concepts. I do not claim authorship of the current repository countdown or sole ownership of the multiplayer backend, lobby, Socket.IO infrastructure, current synchronization, chat/scoring backend, AI helper or later advanced canvas functionality.
+
+### Runtime validation
+
+I restored the project locally and tested it in two independent browser sessions. I verified that both clients could join one lobby and receive ready/player updates, that freehand drawing and chat synchronized, and that an exact correct guess was recognized. The drawer saw the word while guessers saw placeholders.
+
+The same runtime test found that the timer reached zero without advancing the round, the selected language did not carry through to gameplay, the external AI-helper service was unavailable, and some advanced canvas tool selections raised runtime errors. I use these as current-build limitations and do not describe the full game loop as reliable or production-ready.
+
+### Interactive demonstration
+
+I added a small, standalone canvas and timer interaction to `skraw.html` instead of embedding the unstable original multiplayer application. The portfolio-only demo uses the existing HTML, CSS and vanilla JavaScript stack, needs no backend or extra library, and is clearly labelled as separate from the original game.
+
+I copied the approved active-gameplay screenshot into the portfolio's local assets and optimized it as a WebP image. Public pages reference only the local portfolio copy, not the research folder.
+
+### Future
+
+I kept the existing Selected Work card architecture and added Skraw.io as its strongest frontend case. After I finish the remaining project content, I plan to reorganize the full Selected Work section into Frontend Development, UX/UI & Client Work, and Media Creation.

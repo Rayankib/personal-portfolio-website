@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skraw.io | Frontend Development / Multiplayer Game | Rayan Fikri</title>
+  <meta name="description" content="Explore my frontend and UX/UI contribution to Skraw.io, a team-built multiplayer drawing-and-guessing game, and try a standalone canvas interaction.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="project-page skraw-page">
+    <a href="index.html#work" class="back-link">← Back to Projects</a>
+
+    <section class="project-hero skraw-hero">
+      <div class="skraw-hero-copy">
+        <p class="section-label">Frontend Development / Multiplayer Game / Team Project</p>
+        <h1>Skraw.io</h1>
+        <p class="skraw-intro">
+          A browser-based drawing-and-guessing game developed as a team project. I focused on early frontend structure, canvas interaction and UX/UI exploration.
+        </p>
+        <p class="skraw-team-note">
+          This is a team project, not a solo-built game. Multiplayer infrastructure and game functionality were developed collaboratively.
+        </p>
+      </div>
+      <figure class="skraw-gameplay">
+        <img src="assets/projects/skraw/skraw-home-preview.jpg" alt="Skraw.io home screen with its player setup form, character options, and Play button" width="1897" height="979" fetchpriority="high" decoding="async">
+        <figcaption>The Skraw.io landing screen introduces the drawing-and-guessing game.</figcaption>
+      </figure>
+    </section>
+
+    <section class="skraw-section" aria-labelledby="skraw-gameplay-title">
+      <p class="section-label">The game</p>
+      <h2 id="skraw-gameplay-title">A shared canvas, one hidden word</h2>
+      <p class="skraw-section-intro">
+        The restored local build was tested with multiple browser sessions. Lobby and ready-state updates, freehand drawing, chat, and correct guesses were observed between clients.
+      </p>
+      <ol class="skraw-flow">
+        <li><span>01</span><h3>Join a lobby</h3><p>Players join a shared game room and see player updates.</p></li>
+        <li><span>02</span><h3>One player draws</h3><p>The drawer sees the word; guessers see blank placeholders.</p></li>
+        <li><span>03</span><h3>Others guess</h3><p>Players send guesses and messages through the chat.</p></li>
+        <li><span>04</span><h3>Correct answers register</h3><p>A correct guess is recognized and reflected in player status.</p></li>
+        <li><span>05</span><h3>Continue the round</h3><p>The game is designed to move to another drawer, though the current timer did not reliably advance the round in testing.</p></li>
+      </ol>
+    </section>
+
+    <section class="skraw-section" aria-labelledby="skraw-runtime-title">
+      <p class="section-label">Runtime validation</p>
+      <h2 id="skraw-runtime-title">Restoring and testing the original build</h2>
+      <p class="skraw-section-intro">
+        I restored the historical project locally and tested it using two browser sessions. The gameplay screenshot records the real application during that multiplayer test.
+      </p>
+      <figure class="skraw-gameplay">
+        <img src="assets/projects/skraw/skraw-active-gameplay.webp" alt="Restored Skraw.io multiplayer game with two players, a drawer drawing in several colors, timer, chat guesses, and drawing controls" width="1800" height="932" loading="lazy" decoding="async">
+        <figcaption>Original multiplayer application captured during local two-session testing.</figcaption>
+      </figure>
+      <ul class="skraw-runtime-facts">
+        <li>Multiple clients joined the same lobby, with player and ready-state updates synchronized.</li>
+        <li>Freehand drawing and normal chat messages synchronized between clients.</li>
+        <li>Correct guesses were recognized; the drawer saw the word while guessers saw placeholders.</li>
+      </ul>
+      <p class="skraw-runtime-note">
+        <strong>Transparency note:</strong> In the restored historical build, the timer reached zero without advancing the round, language selection was not applied to gameplay, the AI-helper service was unavailable, and some advanced drawing-tool selections produced runtime errors.
+      </p>
+    </section>
+
+    <section class="skraw-section" aria-labelledby="skraw-contribution-title">
+      <p class="section-label">My role</p>
+      <h2 id="skraw-contribution-title">My frontend contribution</h2>
+      <p class="skraw-section-intro">
+        I focused on frontend development and UX/UI within the wider team project. My contribution is distinct from the later shared game and backend implementation.
+      </p>
+      <ul class="skraw-contribution-list">
+        <li>I created the initial component-based game interface and early <code>App.vue</code> layout.</li>
+        <li>I established an early <code>CanvasBoard.vue</code> drawing baseline and drawing controls.</li>
+        <li>I worked on the initial <code>GameHeader.vue</code>, <code>PlayerList.vue</code>, and general frontend styling.</li>
+        <li>I researched and designed the timer experience, and contributed to an early timer implementation/prototype.</li>
+        <li>I used user feedback and questionnaire work to validate interface and timer concepts.</li>
+      </ul>
+      <p class="skraw-accuracy-note">
+        The countdown shown in the gameplay screenshot belongs to the later team build. I do not claim authorship of its current implementation.
+      </p>
+    </section>
+
+    <section class="skraw-section skraw-demo-section" aria-labelledby="skraw-demo-title">
+      <div class="skraw-demo-heading">
+        <div>
+          <p class="section-label">Try the interaction</p>
+          <h2 id="skraw-demo-title">A small, standalone canvas demo</h2>
+          <p>This portfolio-only interaction recreates a simple drawing experience. It is not the original Skraw.io game and does not connect to a server.</p>
+        </div>
+        <div class="skraw-timer" aria-label="Portfolio demo timer">
+          <div class="skraw-timer-readout">
+            <span>Demo timer</span>
+            <output data-demo-time aria-label="Time remaining">60</output>
+            <span>seconds</span>
+          </div>
+          <progress data-demo-progress max="60" value="60" aria-label="Time remaining on the portfolio demo timer"></progress>
+          <div class="skraw-timer-actions">
+            <button class="skraw-control-button" type="button" data-timer-toggle>Start timer</button>
+            <button class="skraw-control-button skraw-control-button--quiet" type="button" data-timer-reset>Reset timer</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="skraw-canvas-demo" data-skraw-demo>
+        <div class="skraw-canvas-toolbar" aria-label="Canvas drawing controls">
+          <label class="skraw-field">
+            <span>Color</span>
+            <input type="color" value="#181818" data-canvas-color aria-label="Drawing color">
+          </label>
+          <label class="skraw-field skraw-brush-field">
+            <span>Brush size <output data-brush-value>6</output></span>
+            <input type="range" min="1" max="32" value="6" data-brush-size aria-label="Brush size">
+          </label>
+          <div class="skraw-canvas-actions">
+            <button class="skraw-control-button skraw-control-button--quiet" type="button" data-undo disabled>Undo</button>
+            <button class="skraw-control-button skraw-control-button--quiet" type="button" data-redo disabled>Redo</button>
+            <button class="skraw-control-button" type="button" data-clear>Clear canvas</button>
+            <button class="skraw-control-button skraw-control-button--quiet" type="button" data-reset-demo>Reset demo</button>
+          </div>
+        </div>
+        <p class="skraw-canvas-instructions" id="skraw-canvas-instructions">Draw with a mouse, touch, or pen. Use the controls above with a keyboard; focus the canvas for a visible focus indicator.</p>
+        <canvas class="skraw-demo-canvas" data-demo-canvas tabindex="0" aria-label="Blank portfolio drawing canvas. Draw with a mouse, touch, or pen." aria-describedby="skraw-canvas-instructions"></canvas>
+        <p class="skraw-demo-status" data-demo-status role="status" aria-live="polite">Canvas ready. This demo runs locally in your browser.</p>
+      </div>
+    </section>
+
+    <section class="skraw-section" aria-labelledby="skraw-timer-title">
+      <p class="section-label">UX / iteration</p>
+      <h2 id="skraw-timer-title">Exploring timer feedback</h2>
+      <div class="skraw-iteration-grid">
+        <article><h3>Problem</h3><p>A simple text countdown offered limited visual feedback about time remaining.</p></article>
+        <article><h3>Research</h3><p>I explored timer treatments used in drawing and game interfaces.</p></article>
+        <article><h3>Design</h3><p>I explored multiple timer directions and documented a visual approach.</p></article>
+        <article><h3>Validation</h3><p>I contributed to an early timer prototype and collected user feedback on interface clarity and the timer concept.</p></article>
+      </div>
+      <p class="skraw-accuracy-note">This describes my earlier exploration and prototype contribution, not authorship of the timer in the current team build.</p>
+    </section>
+
+    <section class="skraw-section" aria-labelledby="skraw-team-title">
+      <p class="section-label">Team project</p>
+      <h2 id="skraw-team-title">Frontend work in a larger product</h2>
+      <p class="skraw-section-intro">
+        The team developed the multiplayer lobby, Socket.IO infrastructure and synchronization, chat and scoring backend, game state, later advanced canvas functionality, and AI-helper wiring. These shared features provide the context for my frontend contribution; I do not claim sole ownership of them.
+      </p>
+      <ul class="skraw-stack" aria-label="Project technology">
+        <li>Vue 3</li><li>Vite</li><li>Vue Router</li><li>Tailwind CSS</li><li>Canvas API</li><li>Socket.IO client</li>
+        <li>Node.js</li><li>Express</li><li>Socket.IO</li>
+      </ul>
+    </section>
+
+    <a href="index.html#work" class="project-card__cta skraw-back-cta">← Back to Projects</a>
+  </main>
+
+  <script src="js/skraw-demo.js"></script>
+</body>
+</html>

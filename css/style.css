@@ -261,6 +261,19 @@ h1 {
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
+.project-card--featured {
+  border-color: #4c4320;
+  background: linear-gradient(120deg, #15140f, #111111 58%);
+}
+
+.project-card--featured .project-card__preview {
+  min-height: 360px;
+}
+
+.project-card--featured .project-card__preview img {
+  object-position: center;
+}
+
 .project-card:hover {
   border-color: #ffcc00;
   background: #151515;
@@ -448,6 +461,11 @@ h1 {
   padding: 80px 24px;
 }
 
+.skraw-page {
+  max-width: 1220px;
+  padding-top: 52px;
+}
+
 .back-link {
   display: inline-block;
   margin-bottom: 60px;
@@ -459,6 +477,394 @@ h1 {
   background: #111111;
   border: 1px solid #232323;
   border-radius: 20px;
+}
+
+.skraw-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  align-items: center;
+  gap: 38px;
+  padding: clamp(28px, 5vw, 58px);
+  border-color: #3c3520;
+  background: linear-gradient(135deg, #15140f, #111111 62%);
+}
+
+.skraw-hero h1 {
+  margin: 4px 0 22px;
+  font-size: clamp(58px, 8vw, 104px);
+}
+
+.skraw-intro {
+  color: #eeeeee !important;
+  font-size: 19px;
+  line-height: 1.65 !important;
+}
+
+.skraw-team-note,
+.skraw-accuracy-note {
+  margin-top: 20px;
+  padding: 16px 18px;
+  border-left: 3px solid #ffcc00;
+  background: #18170f;
+  color: #ddd7bf !important;
+  font-size: 14px;
+  line-height: 1.7 !important;
+}
+
+.skraw-runtime-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skraw-runtime-facts li {
+  padding: 18px 20px;
+  border: 1px solid #292929;
+  border-radius: 9px;
+  background: #111111;
+  color: #dedede;
+  line-height: 1.7;
+}
+
+.skraw-runtime-note {
+  margin-top: 18px;
+  padding: 14px 18px;
+  border-left: 2px solid #666666;
+  background: #131313;
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.skraw-gameplay {
+  min-width: 0;
+  margin: 0;
+}
+
+.skraw-gameplay img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #383324;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.skraw-gameplay figcaption {
+  margin-top: 10px;
+  color: #bdbdbd;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.skraw-section {
+  margin-top: 74px;
+  min-width: 0;
+}
+
+.skraw-section h2 {
+  max-width: 900px;
+  margin-bottom: 18px;
+  font-size: clamp(32px, 4.5vw, 48px);
+  line-height: 1.1;
+}
+
+.skraw-section-intro {
+  margin-bottom: 26px;
+}
+
+.skraw-flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skraw-flow li,
+.skraw-iteration-grid article {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  background: #111111;
+}
+
+.skraw-flow li > span {
+  color: #ffcc00;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.skraw-flow h3,
+.skraw-iteration-grid h3 {
+  margin: 18px 0 10px;
+  font-size: 18px;
+}
+
+.skraw-flow p,
+.skraw-iteration-grid p {
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.skraw-contribution-list {
+  display: grid;
+  gap: 12px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skraw-contribution-list li {
+  position: relative;
+  padding: 18px 20px 18px 48px;
+  border: 1px solid #292929;
+  border-radius: 9px;
+  background: #111111;
+  color: #dedede;
+  line-height: 1.7;
+}
+
+.skraw-contribution-list li::before {
+  position: absolute;
+  left: 20px;
+  color: #ffcc00;
+  content: "↗";
+}
+
+.skraw-contribution-list code {
+  color: #ffdc4d;
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.skraw-demo-section {
+  padding: clamp(22px, 4vw, 40px);
+  border: 1px solid #3c3520;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #15140f, #101010 72%);
+}
+
+.skraw-demo-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 0.45fr);
+  align-items: end;
+  gap: 28px;
+  margin-bottom: 26px;
+}
+
+.skraw-demo-heading h2 {
+  margin-bottom: 14px;
+}
+
+.skraw-demo-heading > div > p:last-child {
+  max-width: 720px;
+}
+
+.skraw-timer {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #343020;
+  border-radius: 10px;
+  background: #0c0c0b;
+}
+
+.skraw-timer-readout {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: #bdbdbd;
+  font-size: 13px;
+}
+
+.skraw-timer-readout output {
+  color: #ffcc00;
+  font-size: 30px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.skraw-timer progress {
+  display: block;
+  width: 100%;
+  height: 8px;
+  margin: 12px 0;
+  accent-color: #ffcc00;
+}
+
+.skraw-timer-actions,
+.skraw-canvas-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skraw-canvas-demo {
+  overflow: hidden;
+  border: 1px solid #343434;
+  border-radius: 10px;
+  background: #0c0c0b;
+}
+
+.skraw-canvas-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 14px;
+  padding: 16px;
+  border-bottom: 1px solid #292929;
+}
+
+.skraw-field {
+  display: grid;
+  gap: 8px;
+  color: #eeeeee;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.skraw-field input[type="color"] {
+  width: 48px;
+  height: 38px;
+  padding: 3px;
+  border: 1px solid #494949;
+  border-radius: 6px;
+  background: #151515;
+  cursor: pointer;
+}
+
+.skraw-brush-field {
+  flex: 1 1 180px;
+}
+
+.skraw-brush-field span {
+  display: flex;
+  gap: 6px;
+}
+
+.skraw-brush-field output {
+  color: #ffcc00;
+  font-variant-numeric: tabular-nums;
+}
+
+.skraw-brush-field input {
+  width: 100%;
+  accent-color: #ffcc00;
+}
+
+.skraw-control-button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 13px;
+  border: 1px solid #ffcc00;
+  border-radius: 6px;
+  background: #ffcc00;
+  color: #080808;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.skraw-control-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: #ffdc4d;
+  border-color: #ffdc4d;
+}
+
+.skraw-control-button--quiet {
+  border-color: #494949;
+  background: #181818;
+  color: #eeeeee;
+}
+
+.skraw-control-button--quiet:hover:not(:disabled) {
+  background: #242424;
+  border-color: #777777;
+}
+
+.skraw-control-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.skraw-control-button:focus-visible,
+.skraw-field input:focus-visible,
+.skraw-demo-canvas:focus-visible {
+  outline: 3px solid #ffcc00;
+  outline-offset: 3px;
+}
+
+.skraw-canvas-instructions {
+  padding: 12px 16px 0;
+  color: #bdbdbd;
+  font-size: 13px;
+}
+
+.skraw-demo-canvas {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 40vw, 480px);
+  margin-top: 12px;
+  background: #ffffff;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.skraw-demo-status {
+  min-height: 44px;
+  padding: 12px 16px;
+  color: #cfcfcf;
+  font-size: 13px;
+}
+
+.skraw-iteration-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.skraw-iteration-grid h3 {
+  margin-top: 0;
+  color: #ffcc00;
+}
+
+.skraw-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skraw-stack li {
+  padding: 8px 12px;
+  border: 1px solid #333333;
+  border-radius: 30px;
+  background: #111111;
+  color: #e0e0e0;
+  font-size: 13px;
+}
+
+.skraw-runtime-note {
+  margin-top: 28px;
+  border-left-color: #8f823e;
+  background: #11110d;
+}
+
+.skraw-back-cta {
+  margin-top: 48px;
 }
 
 .project-hero h1 {
@@ -747,6 +1153,11 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .project-card--featured .project-card__preview {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
   .project-card__preview {
     min-height: 0;
     aspect-ratio: 16 / 10;
@@ -760,8 +1171,28 @@ h1 {
     padding: 48px 20px;
   }
 
+  .skraw-page {
+    padding: 40px 20px;
+  }
+
   .cz-hero {
     padding: 36px 28px;
+  }
+
+  .skraw-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .skraw-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skraw-runtime-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .skraw-iteration-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .cz-section {
@@ -808,8 +1239,28 @@ h1 {
     padding: 32px 16px;
   }
 
+  .skraw-page {
+    padding: 30px 16px;
+  }
+
+  .skraw-page .back-link {
+    margin-bottom: 28px;
+  }
+
   .cz-hero {
     padding: 28px 20px;
+  }
+
+  .skraw-hero {
+    padding: 24px 20px;
+  }
+
+  .skraw-intro {
+    font-size: 17px;
+  }
+
+  .skraw-section {
+    margin-top: 52px;
   }
 
   .cz-section h2 {
@@ -840,6 +1291,28 @@ h1 {
 
   .cz-publication-note {
     padding: 20px;
+  }
+
+  .skraw-flow,
+  .skraw-iteration-grid,
+  .skraw-demo-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .skraw-demo-section {
+    padding: 20px 14px;
+  }
+
+  .skraw-canvas-toolbar {
+    align-items: stretch;
+  }
+
+  .skraw-canvas-actions {
+    width: 100%;
+  }
+
+  .skraw-canvas-actions .skraw-control-button {
+    flex: 1 1 auto;
   }
 
   .details {

@@ -873,3 +873,234 @@ h1 {
     animation-iteration-count: 1 !important;
   }
 }
+
+.ov09-page {
+  max-width: 1180px;
+  padding: clamp(36px, 6vw, 80px) 24px;
+}
+
+.ov09-page .back-link {
+  margin-bottom: 32px;
+}
+
+.ov09-hero {
+  padding: clamp(28px, 6vw, 64px);
+}
+
+.ov09-hero h1 {
+  max-width: 900px;
+  margin: 8px 0 20px;
+  font-size: clamp(48px, 8vw, 96px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.ov09-intro {
+  max-width: 760px;
+  color: #d0d0d0;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.ov09-section {
+  margin-top: 64px;
+}
+
+.ov09-section h2 {
+  margin-bottom: 22px;
+  font-size: clamp(30px, 4vw, 42px);
+}
+
+.ov09-feature .section-label {
+  margin-bottom: 10px;
+  color: #ffcc00;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ov09-video-frame {
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #292929;
+  border-radius: 18px;
+  background: #111111;
+}
+
+.ov09-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: #000000;
+}
+
+.ov09-context-grid,
+.ov09-feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ov09-feedback-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ov09-info-card {
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid #232323;
+  border-radius: 14px;
+  background: #111111;
+}
+
+.ov09-info-card h3 {
+  margin-bottom: 12px;
+  color: #ffcc00;
+  font-size: 19px;
+}
+
+.ov09-info-card p,
+.ov09-section-intro,
+.ov09-thanks {
+  color: #bdbdbd;
+  line-height: 1.75;
+}
+
+.ov09-role-tags {
+  margin-bottom: 12px;
+  color: #ffcc00 !important;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.ov09-section-intro {
+  margin: -8px 0 20px;
+}
+
+.ov09-stills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.ov09-still {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #232323;
+  border-radius: 14px;
+  background: #111111;
+}
+
+.ov09-still img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.ov09-still figcaption {
+  padding: 14px 16px;
+  color: #d0d0d0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ov09-credits {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid #292929;
+  border-radius: 14px;
+  background: #292929;
+}
+
+.ov09-credits div {
+  min-width: 0;
+  padding: 18px 20px;
+  background: #111111;
+}
+
+.ov09-credits dt {
+  margin-bottom: 6px;
+  color: #ffcc00;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ov09-credits dd {
+  color: #eeeeee;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.ov09-thanks {
+  margin-top: 16px;
+}
+
+.ov09-back-cta {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 48px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  background: #ffcc00;
+  color: #080808;
+  font-weight: 700;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.ov09-back-cta:hover {
+  transform: translateY(-2px);
+  background: #ffdc4d;
+}
+
+@media (max-width: 900px) {
+  .ov09-feedback-grid,
+  .ov09-stills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .ov09-page {
+    padding: 32px 16px;
+  }
+
+  .ov09-hero {
+    padding: 28px 20px;
+  }
+
+  .ov09-intro {
+    font-size: 16px;
+  }
+
+  .ov09-section {
+    margin-top: 48px;
+  }
+
+  .ov09-context-grid,
+  .ov09-feedback-grid,
+  .ov09-stills-grid,
+  .ov09-credits {
+    grid-template-columns: 1fr;
+  }
+
+  .ov09-info-card {
+    padding: 22px;
+  }
+
+  .ov09-video-frame {
+    padding: 5px;
+    border-radius: 12px;
+  }
+
+  .ov09-video {
+    border-radius: 7px;
+  }
+}

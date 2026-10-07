@@ -94,3 +94,41 @@ I verified View Projects and Contact Me, the FitPlanner URL, the CZ card and bac
 ### Publication
 
 Before I added the approved web-ready copies to the public site assets, I confirmed permission from CZ and my project group to showcase the prototype work and branding. Unverified provider information remains masked. No internal Portflow export was copied into the website repository.
+
+## 7 October 2026 - OV09 Album Trailer showcase
+
+### Observation
+
+OV09 was only represented by a short text row even though I had a complete audiovisual final product.
+
+### Decision
+
+I decided to make the actual finished trailer the main focus of the project presentation.
+
+### Reasoning
+
+The portfolio is intended for internship recruiters. Showing the finished product provides more direct evidence of my editing, storytelling and media-production skills than only describing the project in text.
+
+### Development
+
+- I reviewed moments throughout the 2:16.94, 1920 × 1080, 29.97 fps H.264/AAC source, which is 220,037,649 bytes. I encoded a 46,542,283-byte 1080p H.264/AAC MP4, kept its 16:9 aspect ratio, enabled fast start for web playback, and kept the original master out of the public site.
+- I selected a colourful studio-performance frame at 86.4 seconds as the homepage poster and created stills from 18.2, 65.0 and 75.5 seconds.
+- I replaced the OV09 text row with a visual project card that follows the FitPlanner and CZ card pattern and keeps OV09 third in the project order.
+- I rebuilt `ov09.html` around the native HTML5 video, project context, my documented role, editing iterations, selected stills, credits and a return link to Projects.
+- I documented my full personal roles as Producer, Actor and Editor, using my Portflow role reflections to describe the supported production, acting and editing contributions separately from the final video's on-screen team credits.
+- I created three web-ready stills from distinct story and studio moments and added descriptive alternative text.
+- I used responsive video and image layouts, native keyboard-operable video controls, visible focus styling and the site's existing reduced-motion rules.
+- I used relative local asset paths, `preload="metadata"`, no autoplay, and no external video library so the project remains lightweight and GitHub Pages compatible.
+- I based project details on the available OV09 Portflow iteration and role reflections and production concept. I did not copy the original master or research exports into the website.
+
+### Original project iteration
+
+The first cut was praised for its cinematography and storytelling, while feedback from Saida asked for faster pacing, more close-ups and more consistent colour grading. Josh said the robbery scene needed more drama and a clearer shift in intensity. In response, I shortened clips, cut closer to the music, added close-ups in emotional moments, increased the robbery scene's pace and reactions, and strengthened the contrast and tension leading into it. In client validation, Gio said the story was clear and the tension built well, while suggesting cleaner transitions and faster returns to the victims during the robbery. I report those as suggestions, not as changes I can confirm were implemented.
+
+### Validation
+
+I checked the homepage project order and OV09 card destination, opened the OV09 page, and followed its Back to Projects link to `index.html#work`. I reopened CZ Zorgvinder and verified its comparison stage, and opened FitPlanner, selected football and confirmed the planner displayed five training sessions.
+
+I checked the homepage and OV09 page at 1440 × 900, 1366 × 768, 768 × 1024 and 390 × 844. Neither page had horizontal overflow, and the trailer retained its 16:9 ratio at each viewport. The poster and all three stills loaded. I verified native video controls, metadata and manual playback in the browser; the video played at 1920 × 1080 with a duration of 136.94 seconds. Keyboard focus was visible on the project navigation link, the video was keyboard-focusable, and reduced-motion settings disabled smooth scrolling and shortened transitions.
+
+The browser recorded no console or page errors. It did report `ERR_ABORTED` for a video request when I navigated away during preload; the video metadata loaded and playback succeeded, so this was a cancelled preload rather than a missing asset. I also checked the local project links and asset paths. External portfolio feedback remains pending.

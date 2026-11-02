@@ -5,45 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CZ Zorgvinder | Client UX/UI Project | Rayan Fikri</title>
   <meta name="description" content="A UX/UI project developed with CZ as our client, exploring improvements to healthcare search, filtering and provider comparison.">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="canonical" href="https://rayankib.github.io/personal-portfolio-website/cz.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="css/case-study.css">
+  <meta property="og:title" content="CZ Zorgvinder | Rayan Fikri">
+  <meta property="og:description" content="A five-person UX/UI client project with CZ. My focus: research, interface design and prototyping, presented at CZ headquarters in Tilburg.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://rayankib.github.io/personal-portfolio-website/cz.html">
+  <meta property="og:image" content="https://rayankib.github.io/personal-portfolio-website/assets/social/portfolio-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Rayan Fikri — I design interfaces. I build them too. Frontend Development and UX/UI.">
+  <meta property="og:site_name" content="Rayan Fikri Portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CZ Zorgvinder | Rayan Fikri">
+  <meta name="twitter:description" content="A five-person UX/UI client project with CZ. My focus: research, interface design and prototyping, presented at CZ headquarters in Tilburg.">
+  <meta name="twitter:image" content="https://rayankib.github.io/personal-portfolio-website/assets/social/portfolio-og.png">
+  <meta name="twitter:image:alt" content="Rayan Fikri — I design interfaces. I build them too. Frontend Development and UX/UI.">
 </head>
-<body>
-
+<body class="case-page">
+  <header class="case-masthead">
+    <a class="case-wordmark" href="index.html" aria-label="Rayan Fikri portfolio">RF</a>
+    <nav class="case-navigation" aria-label="CZ case navigation">
+      <a href="index.html#work">All work</a>
+      <a href="#prototype-explorer">Prototype</a>
+      <a href="#cz-contribution">My contribution</a>
+    </nav>
+    <a class="case-back" href="index.html#work">Portfolio <span aria-hidden="true">↗</span></a>
+  </header>
   <main class="project-page cz-page">
-    <a href="index.html#work" class="back-link">← Back to selected work</a>
-
-    <section class="project-hero cz-hero">
-      <p class="section-label">Client Project / UX/UI Design</p>
-      <h1>CZ Zorgvinder</h1>
-      <p>
-        A UX/UI project developed in collaboration with CZ as our client. Together with my project team, I researched opportunities to improve the Zorgvinder experience and developed an interactive prototype, which we presented at CZ's headquarters in Tilburg.
-      </p>
-      <p class="cz-disclaimer">
-        The work shown is a UX concept and prototype. A production implementation on CZ's website is not confirmed.
-      </p>
+    <section class="project-hero cz-hero" id="project">
+      <div>
+        <p class="section-label">01 / Client project · UX/UI</p>
+        <h1>CZ Zorgvinder</h1>
+        <p>In a five-person team, I focused on UX research, interface design and prototyping for a clearer healthcare-search experience. We presented the concept at CZ headquarters in Tilburg.</p>
+        <dl class="project-meta">
+          <div><dt>CLIENT</dt><dd>CZ</dd></div>
+          <div><dt>MY FOCUS</dt><dd>Research · UX/UI</dd></div>
+          <div><dt>DELIVERABLE</dt><dd>Prototype · CZ presentation</dd></div>
+        </dl>
+        <p class="cz-disclaimer">Concept work; no production implementation is claimed.</p>
+      </div>
+      <figure class="cz-hero-media">
+        <img src="assets/projects/cz-zorgvinder/cz-home-preview.jpg" alt="CZ Zorgvinder prototype homepage with care and location search fields" width="1400" height="776" fetchpriority="high">
+        <figcaption class="case-caption"><span>SEARCH EXPERIENCE</span><span>TEAM PROTOTYPE</span></figcaption>
+      </figure>
     </section>
 
     <section class="cz-section" aria-labelledby="cz-problem-title">
-      <p class="section-label">The UX problem</p>
-      <h2 id="cz-problem-title">Finding care can feel unclear</h2>
-      <p class="cz-section-intro">
-        Our project research described several barriers in the existing healthcare search experience:
-      </p>
+      <p class="section-label">Research direction</p>
+      <h2 id="cz-problem-title">Make the search easier to navigate.</h2>
+      <p class="cz-section-intro">The project research highlighted friction around search terms, filters, provider context and comparison.</p>
       <ul class="cz-problem-list">
-        <li>Search could be difficult when people used misspellings, synonyms or everyday terms.</li>
-        <li>Some filters were difficult to interpret, while relevant options such as waiting time or specialisation were missing.</li>
-        <li>Provider results and detail pages offered limited context for choosing suitable care.</li>
-        <li>People had no clear way to compare providers side by side.</li>
-        <li>The project analysis reported that the experience was not usable on mobile.</li>
+        <li>Explore more forgiving search and suggestions.</li>
+        <li>Clarify filters and provider information.</li>
+        <li>Compare relevant details side by side.</li>
+        <li>Consider the experience on mobile.</li>
       </ul>
     </section>
 
-    <section class="cz-section prototype-explorer" data-prototype-explorer aria-labelledby="explorer-title">
-      <p class="section-label">Prototype explorer</p>
-      <h2 id="explorer-title">Explore the prototype journey</h2>
-      <p class="cz-section-intro">
-        Explore four stages of the prototype developed by our project team in collaboration with CZ. Unverified provider-specific sample content remains masked.
-      </p>
+    <section class="cz-section prototype-explorer" id="prototype-explorer" data-prototype-explorer aria-labelledby="explorer-title">
+      <p class="section-label">The work / interactive prototype</p>
+      <h2 id="explorer-title">Four steps through the concept.</h2>
+      <p class="cz-section-intro">Select a stage to inspect the authentic team prototype. Unverified provider details remain masked.</p>
 
       <div class="prototype-tablist" role="tablist" aria-label="Prototype stages">
         <button id="prototype-tab-search" class="prototype-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="prototype-panel-search" tabindex="0">01 <span>Search</span></button>
@@ -55,101 +81,99 @@
       <section id="prototype-panel-search" class="prototype-panel" role="tabpanel" aria-labelledby="prototype-tab-search" tabindex="0">
         <div class="prototype-panel-heading">
           <p class="section-label">01 / Search</p>
-          <h3>Start with the way people describe their needs</h3>
-          <p>The concept explores search by care need and location, with suggestions intended to help people find relevant terms.</p>
+          <h3>Search and suggestions</h3>
+          <p>Search by care need and location, with suggested terms.</p>
         </div>
         <div class="prototype-image-grid">
           <figure class="prototype-figure">
             <button class="prototype-image-button" type="button" data-enlarge aria-label="Enlarge the CZ Zorgvinder search homepage screenshot">
               <img src="assets/projects/cz-zorgvinder/cz-search-preview.jpg" alt="CZ client-project search prototype with a care search field and location field" width="1400" height="779" loading="lazy" decoding="async">
             </button>
-            <figcaption>Search homepage prototype</figcaption>
+            <figcaption>Search homepage</figcaption>
           </figure>
           <figure class="prototype-figure">
             <button class="prototype-image-button" type="button" data-enlarge aria-label="Enlarge the CZ Zorgvinder search suggestions screenshot">
               <img src="assets/projects/cz-zorgvinder/cz-search-suggestions-preview.jpg" alt="CZ client-project prototype showing suggestions below a healthcare search field" width="1190" height="748" loading="lazy" decoding="async">
             </button>
-            <figcaption>Search suggestions prototype</figcaption>
+            <figcaption>Suggested search terms</figcaption>
           </figure>
         </div>
-        <p class="prototype-media-note">Permission to showcase CZ branding and prototype imagery was confirmed. Unverified provider-specific information remains masked.</p>
+        <p class="prototype-media-note">CZ branding and prototype imagery are shown with permission.</p>
       </section>
 
       <section id="prototype-panel-results" class="prototype-panel" role="tabpanel" aria-labelledby="prototype-tab-results" tabindex="0" hidden>
         <div class="prototype-panel-heading">
           <p class="section-label">02 / Results</p>
-          <h3>Make relevant filters and provider context easier to scan</h3>
-          <p>Our prototype groups filters for contract, distance, waiting time, specialisation and digital options. Provider cards and search-summary data are masked because their values are unverified.</p>
+          <h3>Results and filters</h3>
+          <p>Explore filters for contract, distance, waiting time, specialisation and digital options. Sample provider data is masked.</p>
         </div>
         <figure class="prototype-figure">
           <button class="prototype-image-button" type="button" data-enlarge aria-label="Enlarge the redacted CZ Zorgvinder results screenshot">
             <img src="assets/projects/cz-zorgvinder/cz-results-redacted.jpg" alt="Client-project results prototype with filter controls visible and provider sample data redacted" width="1400" height="1121" loading="lazy" decoding="async">
           </button>
-          <figcaption>Results and filters concept; unverified provider data is redacted.</figcaption>
+          <figcaption>Results concept · sample data masked</figcaption>
         </figure>
       </section>
 
       <section id="prototype-panel-provider" class="prototype-panel" role="tabpanel" aria-labelledby="prototype-tab-provider" tabindex="0" hidden>
         <div class="prototype-panel-heading">
           <p class="section-label">03 / Provider</p>
-          <h3>Bring useful provider details into one place</h3>
-          <p>Our prototype brings provider information, treatments, languages, waiting-time context and service options into a detail view. Provider identity, contact information and claims are masked.</p>
+          <h3>Provider details</h3>
+          <p>A detail view brings together care, language and service information. Identifying and unverified details are masked.</p>
         </div>
         <figure class="prototype-figure">
           <button class="prototype-image-button" type="button" data-enlarge aria-label="Enlarge the redacted CZ Zorgvinder provider screenshot">
             <img src="assets/projects/cz-zorgvinder/cz-provider-redacted.jpg" alt="Client-project provider detail prototype with provider-specific information redacted" width="1400" height="1197" loading="lazy" decoding="async">
           </button>
-          <figcaption>Provider detail concept; identifying and unverified sample claims are redacted.</figcaption>
+          <figcaption>Provider detail concept · identifying details masked</figcaption>
         </figure>
       </section>
 
       <section id="prototype-panel-compare" class="prototype-panel" role="tabpanel" aria-labelledby="prototype-tab-compare" tabindex="0" hidden>
         <div class="prototype-panel-heading">
           <p class="section-label">04 / Compare</p>
-          <h3>Support a more informed choice</h3>
-          <p>Our comparison prototype places contract, waiting time, specialisation, distance, rating, languages, treatment and online-intake fields side by side. Provider-specific values are masked.</p>
+          <h3>Compare providers</h3>
+          <p>Compare care, distance, waiting time and service details side by side. Provider values are masked.</p>
         </div>
         <figure class="prototype-figure">
           <button class="prototype-image-button" type="button" data-enlarge aria-label="Enlarge the redacted CZ Zorgvinder comparison screenshot">
             <img src="assets/projects/cz-zorgvinder/cz-compare-redacted.jpg" alt="Client-project provider comparison table with row labels visible and provider values redacted" width="1400" height="854" loading="lazy" decoding="async">
           </button>
-          <figcaption>Provider comparison concept; provider names and sample values are redacted.</figcaption>
+          <figcaption>Comparison concept · provider details masked</figcaption>
         </figure>
       </section>
     </section>
 
-    <section class="cz-section" aria-labelledby="cz-decisions-title">
-      <p class="section-label">Research and design decisions</p>
-      <h2 id="cz-decisions-title">From research to interface choices</h2>
-      <ul class="cz-problem-list">
-        <li>Explore more forgiving search and suggestions for varied search terms.</li>
-        <li>Give relevant filters and provider context a clearer place in the results flow.</li>
-        <li>Make comparison available as a distinct step instead of asking visitors to remember details across pages.</li>
-        <li>Add context around wait-time information and make navigation and filters easier to find.</li>
-      </ul>
-    </section>
-
-    <section class="cz-section" aria-labelledby="cz-client-feedback-title">
-      <p class="section-label">Client presentation and feedback</p>
-      <h2 id="cz-client-feedback-title">Presented at CZ in Tilburg</h2>
-      <p>Our team presented the project at CZ's headquarters in Tilburg. The October 29 project presentation also reports feedback from four testers: they responded positively to the comparison concept, while filter visibility, wait-time context and navigation clarity remained improvement areas.</p>
-      <p class="cz-feedback-note">These are limited project-test findings, not proven broader usability outcomes. No additional client response or production outcome is claimed here.</p>
-    </section>
-
-    <section class="cz-section" aria-labelledby="cz-contribution-title">
-      <p class="section-label">My contribution</p>
-      <h2 id="cz-contribution-title">My work within a five-person team</h2>
-      <p>
-        I contributed to audience research, reaching out to potential participants and professionals, and documenting research and design-related project activities. The interface and prototype were developed collaboratively by our five-person project team. I do not claim that I designed or coded the complete prototype on my own.
-      </p>
-      <p class="cz-team-credit">The research and UX prototype are collective team work, developed in collaboration with CZ as our client.</p>
+    <section class="cz-section" id="cz-contribution" aria-labelledby="cz-contribution-title">
+      <p class="section-label">My contribution / outcome</p>
+      <h2 id="cz-contribution-title">Research, collaboration, presentation.</h2>
+      <div class="case-grid-copy">
+        <article>
+          <h3>Research</h3>
+          <p>Audience research, outreach to potential participants and professionals, and project documentation.</p>
+        </article>
+        <article>
+          <h3>Team prototype</h3>
+          <p>Interface and prototype work were developed collaboratively by our five-person team.</p>
+        </article>
+        <article>
+          <h3>Client presentation</h3>
+          <p>Presented at CZ headquarters in Tilburg. The project report records feedback from four testers.</p>
+        </article>
+      </div>
+      <p class="cz-feedback-note">Tester feedback identified filter visibility, waiting-time context and navigation clarity as areas to improve; it is not a broader usability result.</p>
     </section>
 
     <section class="cz-publication-note" aria-label="Project publication context">
-      <h2>Project status</h2>
-      <p>Permission to showcase the prototype and CZ branding has been confirmed. Unverified provider-specific information remains masked, and no production implementation is claimed.</p>
+      <h2>Prototype, not a live CZ service.</h2>
+      <p>Unverified provider information remains masked. No production implementation is claimed.</p>
     </section>
 
+    <nav class="case-next" aria-label="Next project">
+      <p class="case-next__label">NEXT / 02</p>
+      <a href="linked.html">Linked <span aria-hidden="true">↗</span></a>
+      <p class="case-next__detail">Studio Krom · In development</p>
+    </nav>
     <dialog class="prototype-dialog" aria-label="Enlarged prototype screenshot">
       <form method="dialog">
         <button class="prototype-dialog-close" type="submit" aria-label="Close enlarged screenshot">Close <span aria-hidden="true">×</span></button>
@@ -159,5 +183,15 @@
   </main>
 
   <script src="js/main.js"></script>
+  <footer class="case-footer">
+    <a class="case-wordmark" href="index.html" aria-label="Back to portfolio">RF</a>
+    <a href="mailto:r.fikri@student.fontys.nl">Get in touch <span aria-hidden="true">↗</span></a>
+    <nav class="case-footer-social" aria-label="Social profiles">
+      <a href="https://github.com/Rayankib" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/rayan-fikri-6a5489331/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </nav>
+    <p>RAYAN FIKRI · FONTYS ICT</p>
+    <a href="#project">BACK TO TOP ↑</a>
+  </footer>
 </body>
 </html>

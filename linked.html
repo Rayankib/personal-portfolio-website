@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a09">
+  <meta name="description" content="An in-development Linked client project by Rayan Fikri, exploring volunteer assistance during a night out through Figma prototypes and frontend implementation.">
+  <title>Linked — Client Project by Rayan Fikri</title>
+  <link rel="canonical" href="https://rayankib.github.io/personal-portfolio-website/linked.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="css/case-study.css">
+  <link rel="stylesheet" href="css/linked.css">
+  <meta property="og:title" content="Linked | Client Project by Rayan Fikri">
+  <meta property="og:description" content="An in-development Studio Krom team project. My frontend contributions cover volunteer alerts, request acceptance and opt-in approximate location.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://rayankib.github.io/personal-portfolio-website/linked.html">
+  <meta property="og:image" content="https://rayankib.github.io/personal-portfolio-website/assets/social/portfolio-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Rayan Fikri — I design interfaces. I build them too. Frontend Development and UX/UI.">
+  <meta property="og:site_name" content="Rayan Fikri Portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Linked | Client Project by Rayan Fikri">
+  <meta name="twitter:description" content="An in-development Studio Krom team project. My frontend contributions cover volunteer alerts, request acceptance and opt-in approximate location.">
+  <meta name="twitter:image" content="https://rayankib.github.io/personal-portfolio-website/assets/social/portfolio-og.png">
+  <meta name="twitter:image:alt" content="Rayan Fikri — I design interfaces. I build them too. Frontend Development and UX/UI.">
+</head>
+<body class="case-page">
+  <header class="case-masthead">
+    <a class="case-wordmark" href="index.html" aria-label="Rayan Fikri portfolio">RF</a>
+    <nav class="case-navigation" aria-label="Linked case navigation">
+      <a href="#volunteer-flow">Volunteer flow</a>
+      <a href="#location-sharing">Location</a>
+      <a href="#what-i-built">What I built</a>
+      <a href="#development">Development</a>
+    </nav>
+    <a class="case-back" href="index.html#work">All work <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="case-hero" id="project" aria-labelledby="case-title">
+      <div class="case-hero__copy">
+        <p class="case-eyebrow">FONTYS FRONTEND DEVELOPMENT <span>—</span> SEMESTER 4</p>
+        <h1 id="case-title">LINKED<span class="case-title__period">.</span></h1>
+        <p class="case-subtitle">Client project <span>·</span> Studio Krom</p>
+        <p class="case-status"><span aria-hidden="true"></span> STATUS: IN DEVELOPMENT</p>
+        <p class="case-intro">An ongoing Studio Krom client project exploring volunteer assistance during a night out in Eindhoven.</p>
+        <p class="case-team-note">Team project. The designs and interactions shown are prototypes, not a deployed emergency service.</p>
+      </div>
+      <figure class="case-hero__visual">
+        <img src="assets/projects/linked/us5-us6-high-2-incoming-request.png" alt="Linked high-fidelity Figma prototype showing a volunteer receiving a new help request" width="780" height="1690" fetchpriority="high">
+        <figcaption><span>US5 / US6</span> VOLUNTEER ALERTS <span>·</span> FIGMA PROTOTYPE</figcaption>
+      </figure>
+      <p class="case-hero__index" aria-hidden="true">LINKED / CLIENT PROJECT / IN DEVELOPMENT</p>
+    </section>
+
+    <section class="case-context" aria-labelledby="context-heading">
+      <p class="case-eyebrow">THE PROJECT</p>
+      <h2 id="context-heading">A clearer path<br>from request to response.</h2>
+      <div class="case-context__copy">
+        <p>The case focuses on volunteer alerts, request acceptance and optional approximate location sharing.</p>
+      </div>
+      <dl class="case-facts">
+        <div><dt>CLIENT</dt><dd>Studio Krom</dd></div>
+        <div><dt>CONTEXT</dt><dd>Fontys · Frontend Development</dd></div>
+        <div><dt>TEAM</dt><dd>Semester 4 client project</dd></div>
+        <div><dt>STATUS</dt><dd>In development</dd></div>
+      </dl>
+    </section>
+
+    <section class="flow-section" id="volunteer-flow" aria-labelledby="flow-heading">
+      <header class="section-intro">
+        <p class="case-eyebrow">SPRINT 2 <span>—</span> USER STORIES 5 &amp; 6</p>
+        <h2 id="flow-heading">From an alert<br>to a shared state.</h2>
+        <p>Review the Figma volunteer flow and switch between low- and high-fidelity screens.</p>
+      </header>
+
+      <div class="flow-controls">
+        <div class="control-group" role="group" aria-label="Prototype fidelity">
+          <span class="control-label">DESIGN STAGE</span>
+          <button type="button" class="segmented-control" data-fidelity="low" aria-pressed="false">Low fidelity</button>
+          <button type="button" class="segmented-control" data-fidelity="high" aria-pressed="true">High fidelity</button>
+        </div>
+        <div class="control-group control-group--stages" role="group" aria-label="Volunteer flow stage">
+          <span class="control-label">FLOW STAGE</span>
+          <button type="button" class="flow-step" data-flow-step="0" aria-pressed="true"><span>01</span> No active requests</button>
+          <button type="button" class="flow-step" data-flow-step="1" aria-pressed="false"><span>02</span> New help request</button>
+          <button type="button" class="flow-step" data-flow-step="2" aria-pressed="false"><span>03</span> Accept request</button>
+          <button type="button" class="flow-step" data-flow-step="3" aria-pressed="false"><span>04</span> Requester confirmation</button>
+        </div>
+      </div>
+
+      <div class="flow-presentation">
+        <div class="flow-description">
+          <p class="flow-description__eyebrow" data-flow-story>US5 · VOLUNTEER INBOX</p>
+          <h3 data-flow-title>No active requests</h3>
+          <p data-flow-description>The volunteer sees an empty request inbox while available. A new help request can appear here.</p>
+          <p class="flow-description__note">Authentic Figma exports · prototype only</p>
+          <p class="flow-position"><span data-flow-position>01</span> <span>/</span> 04</p>
+          <p class="sr-only" data-flow-status role="status" aria-live="polite">High-fidelity prototype, stage 1 of 4: No active requests.</p>
+        </div>
+        <figure class="flow-screen">
+          <img
+            src="assets/projects/linked/us5-us6-high-1-empty-inbox.png"
+            alt="High-fidelity Figma prototype: a volunteer's empty help request inbox"
+            width="780"
+            height="1690"
+            data-flow-image
+          >
+          <figcaption><span data-flow-caption>HIGH FIDELITY</span><span>FIGMA PROTOTYPE · US5 / US6</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="location-section" id="location-sharing" aria-labelledby="location-heading">
+      <header class="section-intro">
+        <p class="case-eyebrow">SPRINT 3 <span>—</span> USER STORY 10</p>
+        <h2 id="location-heading">Approximate by design.</h2>
+        <p>US10 explores optional, approximate location sharing.</p>
+      </header>
+
+      <div class="location-layout">
+        <div class="location-comparison" aria-label="Low- and high-fidelity location-sharing prototype comparison">
+          <figure class="location-screen">
+            <img src="assets/projects/linked/us10-low-location-ready.png" alt="Low-fidelity Linked prototype: requester location-ready screen with an approximate-area illustration" width="780" height="1690" loading="lazy" decoding="async">
+            <figcaption><span>LOW FIDELITY</span><span>US10 · LOCATION READY</span></figcaption>
+          </figure>
+          <figure class="location-screen">
+            <img src="assets/projects/linked/us10-high-location-ready.png" alt="High-fidelity Linked prototype: requester location-ready screen with approximate location and remove-location action" width="780" height="1690" loading="lazy" decoding="async">
+            <figcaption><span>HIGH FIDELITY</span><span>US10 · LOCATION READY</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="location-decisions">
+          <p class="case-eyebrow">PRIVACY &amp; INTERACTION DECISIONS</p>
+          <ul class="decision-list">
+            <li><span>01</span><p>Sharing starts off; browser permission follows opt-in.</p></li>
+            <li><span>02</span><p>Coordinates are rounded to two decimals and shown as an approximate area.</p></li>
+            <li><span>03</span><p>Sharing is optional, visible after acceptance and removed if the request is canceled.</p></li>
+          </ul>
+          <p class="location-caveat">These are prototype behaviors and design decisions, not a claim of production-grade security or guaranteed anonymity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="build-section" id="what-i-built" aria-labelledby="build-heading">
+      <header class="section-intro">
+        <p class="case-eyebrow">MY INDIVIDUAL CONTRIBUTION</p>
+        <h2 id="build-heading">What I built.</h2>
+        <p>Linked is a team project. I implemented selected frontend user stories; the client-project source is not included here. The gallery above switches Figma screens and is not a live implementation.</p>
+      </header>
+
+      <div class="build-grid">
+        <article class="build-item">
+          <p class="build-item__number">01 / US5</p>
+          <h3>Volunteer alerts</h3>
+          <p>Built the volunteer-facing request alert and inbox interface.</p>
+        </article>
+        <article class="build-item">
+          <p class="build-item__number">02 / US6</p>
+          <h3>Request acceptance</h3>
+          <p>Implemented acceptance and status changes, local persistence and cross-tab updates in the client frontend.</p>
+        </article>
+        <article class="build-item">
+          <p class="build-item__number">03 / US10</p>
+          <h3>Optional location</h3>
+          <p>Implemented opt-in browser geolocation, rounded coordinates, conditional visibility and location removal on cancellation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="development-section" id="development" aria-labelledby="development-heading">
+      <header class="section-intro">
+        <p class="case-eyebrow">PROJECT DEVELOPMENT</p>
+        <h2 id="development-heading">An evolving case.</h2>
+        <p>Completed prototype scope and upcoming work.</p>
+      </header>
+
+      <div class="development-timeline">
+        <details class="timeline-entry" open>
+          <summary><span class="timeline-entry__number">01</span><span class="timeline-entry__title">Sprint 2 · Volunteer Alerts</span><span class="timeline-entry__status">US5 / US6</span></summary>
+          <div class="timeline-entry__content">
+            <p>US5/US6 covers alerts, acceptance, status updates and requester confirmation in the Figma flow and coded prototype.</p>
+            <a href="#volunteer-flow">Explore the volunteer flow <span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+        <details class="timeline-entry">
+          <summary><span class="timeline-entry__number">02</span><span class="timeline-entry__title">Sprint 3 · Approximate Location</span><span class="timeline-entry__status">US10</span></summary>
+          <div class="timeline-entry__content">
+            <p>US10 covers opt-in browser permission, approximate location, requests without location and removal on cancellation.</p>
+            <a href="#location-sharing">Explore the location decisions <span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+        <details class="timeline-entry timeline-entry--upcoming">
+          <summary><span class="timeline-entry__number">03</span><span class="timeline-entry__title">Upcoming Development</span><span class="timeline-entry__status">PLANNED / TO BE DETERMINED</span></summary>
+          <div class="timeline-entry__content">
+            <p>Further user stories will be added as the team progresses. No unfinished feature is shown as complete.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <nav class="case-next" aria-label="Next project">
+      <p class="case-next__label">NEXT / 03 · IN DEVELOPMENT</p>
+      <a href="digital-paradise.html">Digital Paradise <span aria-hidden="true">↗</span></a>
+      <p class="case-next__detail">Client web and media assignment</p>
+    </nav>
+  </main>
+
+  <footer class="case-footer">
+    <a class="case-wordmark" href="index.html" aria-label="Back to Rayan Fikri portfolio">RF</a>
+    <a href="mailto:r.fikri@student.fontys.nl">Get in touch <span aria-hidden="true">↗</span></a>
+    <nav class="case-footer-social" aria-label="Social profiles">
+      <a href="https://github.com/Rayankib" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/rayan-fikri-6a5489331/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </nav>
+    <p>RAYAN FIKRI <span>·</span> FONTYS ICT</p>
+    <a href="#project">BACK TO TOP ↑</a>
+  </footer>
+  <script src="js/linked.js"></script>
+</body>
+</html>

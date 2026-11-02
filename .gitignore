@@ -1,0 +1,26 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+.AppleDouble
+._*
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Temporary files and logs
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+.envrc
+*.pem
+*.p12
+*.pfx

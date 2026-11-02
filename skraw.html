@@ -5,89 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skraw.io | Frontend Development / Multiplayer Game | Rayan Fikri</title>
   <meta name="description" content="Explore my frontend and UX/UI contribution to Skraw.io, a team-built multiplayer drawing-and-guessing game, and try a standalone canvas interaction.">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="canonical" href="https://rayankib.github.io/personal-portfolio-website/skraw.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="css/case-study.css">
+  <meta property="og:title" content="Skraw.io | Rayan Fikri">
+  <meta property="og:description" content="My early frontend and UX/UI contribution to Skraw.io, a collaborative drawing-and-guessing game, plus a standalone canvas demo.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://rayankib.github.io/personal-portfolio-website/skraw.html">
+  <meta property="og:image" content="https://rayankib.github.io/personal-portfolio-website/assets/social/portfolio-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Rayan Fikri — I design interfaces. I build them too. Frontend Development and UX/UI.">
+  <meta property="og:site_name" content="Rayan Fikri Portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Skraw.io | Rayan Fikri">
+  <meta name="twitter:description" content="My early frontend and UX/UI contribution to Skraw.io, a collaborative drawing-and-guessing game, plus a standalone canvas demo.">
+  <meta name="twitter:image" content="https://rayankib.github.io/personal-portfolio-website/assets/social/portfolio-og.png">
+  <meta name="twitter:image:alt" content="Rayan Fikri — I design interfaces. I build them too. Frontend Development and UX/UI.">
 </head>
-<body>
-
+<body class="case-page">
+  <header class="case-masthead">
+    <a class="case-wordmark" href="index.html" aria-label="Rayan Fikri portfolio">RF</a>
+    <nav class="case-navigation" aria-label="Skraw.io case navigation">
+      <a href="index.html#work">All work</a>
+      <a href="#skraw-gameplay-title">Gameplay</a>
+      <a href="#skraw-demo-title">Canvas demo</a>
+      <a href="#skraw-contribution-title">My contribution</a>
+    </nav>
+    <a class="case-back" href="index.html#work">Portfolio <span aria-hidden="true">↗</span></a>
+  </header>
   <main class="project-page skraw-page">
-    <a href="index.html#work" class="back-link">← Back to Projects</a>
-
-    <section class="project-hero skraw-hero">
+    <section class="project-hero skraw-hero" id="project">
       <div class="skraw-hero-copy">
-        <p class="section-label">Frontend Development / Multiplayer Game / Team Project</p>
+        <p class="section-label">06 / Collaborative project · Frontend</p>
         <h1>Skraw.io</h1>
-        <p class="skraw-intro">
-          A browser-based drawing-and-guessing game developed as a team project. I focused on early frontend structure, canvas interaction and UX/UI exploration.
-        </p>
-        <p class="skraw-team-note">
-          This is a team project, not a solo-built game. Multiplayer infrastructure and game functionality were developed collaboratively.
-        </p>
+        <p class="skraw-intro">A team-built drawing-and-guessing game. I contributed to early interface structure, canvas interaction and UX/UI exploration.</p>
+        <dl class="project-meta">
+          <div><dt>MY FOCUS</dt><dd>Frontend · UX/UI</dd></div>
+          <div><dt>TOOLS</dt><dd>Vue · Canvas API</dd></div>
+          <div><dt>CONTEXT</dt><dd>Collaborative team project</dd></div>
+        </dl>
+        <p class="skraw-team-note">Multiplayer infrastructure and later game features were developed collaboratively.</p>
       </div>
       <figure class="skraw-gameplay">
         <img src="assets/projects/skraw/skraw-home-preview.jpg" alt="Skraw.io home screen with its player setup form, character options, and Play button" width="1897" height="979" fetchpriority="high" decoding="async">
-        <figcaption>The Skraw.io landing screen introduces the drawing-and-guessing game.</figcaption>
+        <figcaption>Skraw.io game landing screen</figcaption>
       </figure>
     </section>
 
     <section class="skraw-section" aria-labelledby="skraw-gameplay-title">
       <p class="section-label">The game</p>
-      <h2 id="skraw-gameplay-title">A shared canvas, one hidden word</h2>
-      <p class="skraw-section-intro">
-        The restored local build was tested with multiple browser sessions. Lobby and ready-state updates, freehand drawing, chat, and correct guesses were observed between clients.
-      </p>
+      <h2 id="skraw-gameplay-title">A shared canvas. A hidden word.</h2>
+      <p class="skraw-section-intro">The restored build was exercised in two browser sessions to inspect its real multiplayer interface.</p>
       <ol class="skraw-flow">
-        <li><span>01</span><h3>Join a lobby</h3><p>Players join a shared game room and see player updates.</p></li>
-        <li><span>02</span><h3>One player draws</h3><p>The drawer sees the word; guessers see blank placeholders.</p></li>
-        <li><span>03</span><h3>Others guess</h3><p>Players send guesses and messages through the chat.</p></li>
-        <li><span>04</span><h3>Correct answers register</h3><p>A correct guess is recognized and reflected in player status.</p></li>
-        <li><span>05</span><h3>Continue the round</h3><p>The game is designed to move to another drawer, though the current timer did not reliably advance the round in testing.</p></li>
+        <li><span>01</span><h3>Join</h3><p>Players enter a shared lobby.</p></li>
+        <li><span>02</span><h3>Draw</h3><p>One player sees the word and draws.</p></li>
+        <li><span>03</span><h3>Guess</h3><p>Others respond through chat.</p></li>
       </ol>
     </section>
 
     <section class="skraw-section" aria-labelledby="skraw-runtime-title">
       <p class="section-label">Runtime validation</p>
-      <h2 id="skraw-runtime-title">Restoring and testing the original build</h2>
-      <p class="skraw-section-intro">
-        I restored the historical project locally and tested it using two browser sessions. The gameplay screenshot records the real application during that multiplayer test.
-      </p>
+      <h2 id="skraw-runtime-title">The original team build.</h2>
+      <p class="skraw-section-intro">Authentic gameplay capture from a local two-session test.</p>
       <figure class="skraw-gameplay">
         <img src="assets/projects/skraw/skraw-active-gameplay.webp" alt="Restored Skraw.io multiplayer game with two players, a drawer drawing in several colors, timer, chat guesses, and drawing controls" width="1800" height="932" loading="lazy" decoding="async">
-        <figcaption>Original multiplayer application captured during local two-session testing.</figcaption>
+        <figcaption>Original application · local two-session test</figcaption>
       </figure>
       <ul class="skraw-runtime-facts">
-        <li>Multiple clients joined the same lobby, with player and ready-state updates synchronized.</li>
-        <li>Freehand drawing and normal chat messages synchronized between clients.</li>
-        <li>Correct guesses were recognized; the drawer saw the word while guessers saw placeholders.</li>
+        <li>Lobby and ready-state updates synchronized between clients.</li>
+        <li>Freehand drawing and chat messages synchronized.</li>
+        <li>Correct guesses were recognized in the shared game state.</li>
       </ul>
-      <p class="skraw-runtime-note">
-        <strong>Transparency note:</strong> In the restored historical build, the timer reached zero without advancing the round, language selection was not applied to gameplay, the AI-helper service was unavailable, and some advanced drawing-tool selections produced runtime errors.
-      </p>
+      <p class="skraw-runtime-note"><strong>Known limitations:</strong> the historical build's timer did not advance rounds; language selection, the AI helper and some advanced drawing tools were not working reliably.</p>
     </section>
 
     <section class="skraw-section" aria-labelledby="skraw-contribution-title">
       <p class="section-label">My role</p>
-      <h2 id="skraw-contribution-title">My frontend contribution</h2>
-      <p class="skraw-section-intro">
-        I focused on frontend development and UX/UI within the wider team project. My contribution is distinct from the later shared game and backend implementation.
-      </p>
+      <h2 id="skraw-contribution-title">My frontend contribution.</h2>
+      <p class="skraw-section-intro">Early interface and interaction work within the wider team project.</p>
       <ul class="skraw-contribution-list">
-        <li>I created the initial component-based game interface and early <code>App.vue</code> layout.</li>
-        <li>I established an early <code>CanvasBoard.vue</code> drawing baseline and drawing controls.</li>
-        <li>I worked on the initial <code>GameHeader.vue</code>, <code>PlayerList.vue</code>, and general frontend styling.</li>
-        <li>I researched and designed the timer experience, and contributed to an early timer implementation/prototype.</li>
-        <li>I used user feedback and questionnaire work to validate interface and timer concepts.</li>
+        <li>Built the early component-based interface and <code>App.vue</code> layout.</li>
+        <li>Established a <code>CanvasBoard.vue</code> drawing baseline and initial controls.</li>
+        <li>Explored timer UX and contributed to an early prototype informed by feedback.</li>
       </ul>
-      <p class="skraw-accuracy-note">
-        The countdown shown in the gameplay screenshot belongs to the later team build. I do not claim authorship of its current implementation.
-      </p>
+      <p class="skraw-accuracy-note">The timer in the gameplay capture is from the later team build.</p>
     </section>
 
     <section class="skraw-section skraw-demo-section" aria-labelledby="skraw-demo-title">
       <div class="skraw-demo-heading">
         <div>
           <p class="section-label">Try the interaction</p>
-          <h2 id="skraw-demo-title">A small, standalone canvas demo</h2>
-          <p>This portfolio-only interaction recreates a simple drawing experience. It is not the original Skraw.io game and does not connect to a server.</p>
+          <h2 id="skraw-demo-title">Try a standalone canvas.</h2>
+          <p>This local portfolio demo is separate from the multiplayer game.</p>
         </div>
         <div class="skraw-timer" aria-label="Portfolio demo timer">
           <div class="skraw-timer-readout">
@@ -128,31 +140,41 @@
 
     <section class="skraw-section" aria-labelledby="skraw-timer-title">
       <p class="section-label">UX / iteration</p>
-      <h2 id="skraw-timer-title">Exploring timer feedback</h2>
+      <h2 id="skraw-timer-title">Timer exploration.</h2>
       <div class="skraw-iteration-grid">
-        <article><h3>Problem</h3><p>A simple text countdown offered limited visual feedback about time remaining.</p></article>
-        <article><h3>Research</h3><p>I explored timer treatments used in drawing and game interfaces.</p></article>
-        <article><h3>Design</h3><p>I explored multiple timer directions and documented a visual approach.</p></article>
-        <article><h3>Validation</h3><p>I contributed to an early timer prototype and collected user feedback on interface clarity and the timer concept.</p></article>
+        <article><h3>Question</h3><p>How can a countdown make remaining time clearer?</p></article>
+        <article><h3>Exploration</h3><p>Reviewed game timer patterns and documented visual directions.</p></article>
+        <article><h3>Feedback</h3><p>Contributed to an early prototype and collected responses.</p></article>
       </div>
-      <p class="skraw-accuracy-note">This describes my earlier exploration and prototype contribution, not authorship of the timer in the current team build.</p>
+      <p class="skraw-accuracy-note">This is separate from the timer in the current team build.</p>
     </section>
 
     <section class="skraw-section" aria-labelledby="skraw-team-title">
       <p class="section-label">Team project</p>
-      <h2 id="skraw-team-title">Frontend work in a larger product</h2>
-      <p class="skraw-section-intro">
-        The team developed the multiplayer lobby, Socket.IO infrastructure and synchronization, chat and scoring backend, game state, later advanced canvas functionality, and AI-helper wiring. These shared features provide the context for my frontend contribution; I do not claim sole ownership of them.
-      </p>
+      <h2 id="skraw-team-title">Built collaboratively.</h2>
+      <p class="skraw-section-intro">The team developed multiplayer infrastructure, game state, chat, scoring, later canvas features and AI-helper wiring. These are shared project features, not individual claims.</p>
       <ul class="skraw-stack" aria-label="Project technology">
         <li>Vue 3</li><li>Vite</li><li>Vue Router</li><li>Tailwind CSS</li><li>Canvas API</li><li>Socket.IO client</li>
         <li>Node.js</li><li>Express</li><li>Socket.IO</li>
       </ul>
     </section>
 
-    <a href="index.html#work" class="project-card__cta skraw-back-cta">← Back to Projects</a>
+    <nav class="case-next" aria-label="Next featured project">
+      <p class="case-next__label">BACK TO / 01</p>
+      <a href="cz.html">CZ Zorgvinder <span aria-hidden="true">↗</span></a>
+      <p class="case-next__detail">Client UX · research · prototype</p>
+    </nav>
   </main>
-
+  <footer class="case-footer">
+    <a class="case-wordmark" href="index.html" aria-label="Back to portfolio">RF</a>
+    <a href="mailto:r.fikri@student.fontys.nl">Get in touch <span aria-hidden="true">↗</span></a>
+    <nav class="case-footer-social" aria-label="Social profiles">
+      <a href="https://github.com/Rayankib" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/rayan-fikri-6a5489331/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </nav>
+    <p>RAYAN FIKRI · FONTYS ICT</p>
+    <a href="#project">BACK TO TOP ↑</a>
+  </footer>
   <script src="js/skraw-demo.js"></script>
 </body>
 </html>

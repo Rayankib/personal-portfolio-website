@@ -1,4 +1,4 @@
-const sectionLinks = document.querySelectorAll(".bottom-nav a[href^='#']");
+const sectionLinks = document.querySelectorAll("[data-section-navigation] a[href^='#']");
 const sections = [...sectionLinks]
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
@@ -9,7 +9,7 @@ if ("IntersectionObserver" in window) {
       for (const entry of entries) {
         if (!entry.isIntersecting) continue;
 
-        const activeLink = document.querySelector(`.bottom-nav a[href="#${entry.target.id}"]`);
+        const activeLink = document.querySelector(`[data-section-navigation] a[href="#${entry.target.id}"]`);
         if (!activeLink) continue;
 
         sectionLinks.forEach((link) => {
@@ -26,6 +26,78 @@ if ("IntersectionObserver" in window) {
   );
 
   sections.forEach((section) => sectionObserver.observe(section));
+}
+
+const disciplinePanels = document.querySelector(".discipline-panels");
+
+if (disciplinePanels) {
+  const panels = [...disciplinePanels.querySelectorAll("[data-discipline-panel]")];
+
+  const selectDiscipline = (selectedPanel) => {
+    panels.forEach((panel) => {
+      const isSelected = panel === selectedPanel;
+      const trigger = panel.querySelector(".discipline-trigger");
+      const content = panel.querySelector(".discipline-content");
+
+      panel.classList.toggle("is-selected", isSelected);
+      trigger.setAttribute("aria-expanded", String(isSelected));
+      content.setAttribute("aria-hidden", String(!isSelected));
+      content.inert = !isSelected;
+    });
+
+    disciplinePanels.dataset.active = selectedPanel.dataset.discipline;
+  };
+
+  panels.forEach((panel) => {
+    panel.querySelector(".discipline-trigger").addEventListener("click", () => selectDiscipline(panel));
+    panel.addEventListener("focusin", () => selectDiscipline(panel));
+    panel.addEventListener("pointerenter", (event) => {
+      if (event.pointerType === "mouse") selectDiscipline(panel);
+    });
+  });
+}
+
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+if (!reducedMotion.matches && "IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px" }
+  );
+
+  document.querySelectorAll(".page-wrapper [data-reveal]").forEach((section) => {
+    section.classList.add("motion-ready");
+    revealObserver.observe(section);
+  });
+
+  const parallaxPortrait = document.querySelector("[data-parallax]");
+
+  if (parallaxPortrait) {
+    let animationFrame = 0;
+
+    const updateParallax = () => {
+      animationFrame = 0;
+      const bounds = parallaxPortrait.getBoundingClientRect();
+      const offset = Math.max(-28, Math.min(28, (bounds.top - window.innerHeight * 0.15) * -0.035));
+      parallaxPortrait.style.setProperty("--parallax-offset", `${offset}px`);
+    };
+
+    const requestParallaxUpdate = () => {
+      if (animationFrame) return;
+      animationFrame = window.requestAnimationFrame(updateParallax);
+    };
+
+    window.addEventListener("scroll", requestParallaxUpdate, { passive: true });
+    window.addEventListener("resize", requestParallaxUpdate);
+    requestParallaxUpdate();
+  }
 }
 
 const prototypeExplorer = document.querySelector("[data-prototype-explorer]");

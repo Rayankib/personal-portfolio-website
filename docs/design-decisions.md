@@ -35,7 +35,7 @@ I decided to improve the information hierarchy of the hero so visitors can immed
 
 This iteration is based on research, but the result still needs to be validated through feedback and/or user testing.
 
-## 4 October 2026 - First visual product preview
+## 4 October 2026 - FitPlanner visual project preview (early iteration)
 
 ### Observation
 
@@ -61,7 +61,7 @@ I decided to introduce FitPlanner as the first visual product preview and remove
 
 I confirmed that the live FitPlanner homepage loads, selecting a sport opens the training planner, and the planner displays sessions. I reviewed the portfolio card on desktop and at a 390-pixel mobile width, confirmed the image loads without horizontal overflow, and checked that keyboard navigation reaches the live-project link. Toku's back link returned to Selected Work; the OV09 page and its back-link target were verified, although the browser automation could not complete a click on that link. My own review and user feedback are still pending. I have not tested whether the new presentation improves recruiter engagement.
 
-## 4 October 2026 - CZ Zorgvinder prototype explorer
+## 4 October 2026 - CZ Zorgvinder case-study iteration (early version)
 
 ### Observation
 
@@ -73,7 +73,7 @@ I replaced Toku Studios with CZ Zorgvinder, a UX/UI client project completed in 
 
 ### Research and reasoning
 
-Our project research described search difficulties involving misspellings and everyday terms, unclear or insufficiently relevant filters, limited provider details, a lack of side-by-side comparison, and poor mobile usability. The October 29 presentation reports feedback from four testers: they responded positively to the comparison concept, while filter visibility, waiting-time context and navigation clarity remained improvement areas. I present these as limited project-test findings, not a broader usability outcome.
+Our project research described search difficulties involving misspellings and everyday terms, unclear or insufficiently relevant filters, limited provider details, a lack of side-by-side comparison, and poor mobile usability. At the 29 October presentation, four testers responded positively to the comparison concept, while filter visibility, waiting-time context and navigation clarity remained improvement areas. I present these as limited project-test findings, not a broader usability outcome.
 
 My initial idea was an original-versus-redesign comparison. After reviewing the original project material, I could not establish a reliable screenshot of CZ's existing interface. I abandoned the before/after slider rather than risk presenting a student prototype as the original product. I chose an interactive four-stage explorer instead, using documented prototype screens for Search, Results, Provider and Compare.
 
@@ -165,9 +165,9 @@ I added a small, standalone canvas and timer interaction to `skraw.html` instead
 
 I copied the approved active-gameplay screenshot into the portfolio's local assets and optimized it as a WebP image. Public pages reference only the local portfolio copy, not the research folder.
 
-### Future
+### Later portfolio presentation
 
-I kept the existing Selected Work card architecture and added Skraw.io as its strongest frontend case. After I finish the remaining project content, I plan to reorganize the full Selected Work section into Frontend Development, UX/UI & Client Work, and Media Creation.
+This case was subsequently included in the prioritized six-project overview, after client-focused UX/UI and media work.
 
 ## 7 October 2026 - Digital Paradise website and motion case
 
@@ -191,6 +191,22 @@ I presented the production workflow: I filmed most of the original footage acros
 
 I separated my website and video ownership from the wider team-created branding, research and campaign context. I used the live website as the clean first impression, the video thumbnail as the finished media link, and my After Effects screenshot as process evidence. The collaborative logo exploration is labeled as team process rather than an individually authored final identity.
 
-### Future
+### Later portfolio presentation
 
-After I complete all five project cases, I plan to reorganize Selected Work into Frontend Development, UX/UI & Client Work, and Media Creation.
+This client case was subsequently included in the prioritized six-project overview, with the live website and client video linked near the top of the case.
+
+## 2 November 2026 - Internship application readiness
+
+### Changes
+
+- Clarified the February 2027 Semester 5 internship availability and its dependency on final academic scheduling.
+- Added working email, GitHub and LinkedIn links, shared favicon assets and page-specific social metadata.
+- Created an original 1200 × 630 Open Graph image for sharing.
+- Swapped only the homepage stage positions of Skraw.io and FitPlanner; the semantic project order and CZ default selection remain unchanged.
+- Brought individual contributions and finished Digital Paradise deliverables forward while retaining project, prototype and team attribution.
+- Increased small homepage stage labels and actions to 12 px on mobile.
+- Removed the unused legacy stylesheet and its only referenced profile image after checking active-page references.
+
+### Publication and validation
+
+GitHub Pages settings identify `https://rayankib.github.io/personal-portfolio-website/` as the public site URL. The new social preview and metadata have not been tested on WhatsApp or LinkedIn; this work has not been deployed.

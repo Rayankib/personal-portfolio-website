@@ -714,6 +714,28 @@ button {
   letter-spacing: 0.14em;
 }
 
+.work-project__tags,
+.linked-preview__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.work-project__tag,
+.linked-preview__tag {
+  display: inline-flex;
+  min-height: 23px;
+  align-items: center;
+  padding: 3px 8px;
+  border: 1px solid rgba(238, 236, 231, 0.28);
+  border-radius: 999px;
+  color: #d3d0c8;
+  background: rgba(10, 10, 9, 0.58);
+  font-size: 11px;
+  letter-spacing: 0.015em;
+  line-height: 1.2;
+}
+
 .work-project__title {
   font-size: clamp(23px, 2.2vw, 40px);
   letter-spacing: -0.06em;
@@ -851,6 +873,34 @@ button {
 .work-footnote span {
   color: var(--acid);
   letter-spacing: 0.13em;
+}
+
+.work-source-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  margin: 18px 0 0;
+  color: #817e76;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.work-source-links a {
+  color: #d1cec6;
+  text-decoration: underline;
+  text-decoration-color: rgba(238, 236, 231, 0.35);
+  text-underline-offset: 4px;
+  transition: color 180ms ease;
+}
+
+.work-source-links a:hover {
+  color: var(--acid);
+}
+
+.work-source-links a span {
+  color: var(--acid);
+  text-decoration: none;
 }
 
 .about-section {
@@ -1323,6 +1373,11 @@ button {
 
   .work-footnote {
     font-size: 10px;
+  }
+
+  .work-source-links {
+    gap: 8px 14px;
+    font-size: 11px;
   }
 
   .about-section {
